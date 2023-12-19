@@ -4,6 +4,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 .main-div{
   height: 100vh;
   color: black;
