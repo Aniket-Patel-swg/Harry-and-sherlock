@@ -4,7 +4,7 @@ import MovingCircle from "../Components/MovingCircle";
 import audioFile from '../assets/harrytheme.mp3';
 
 const HomePage = () => {
-    const [catched, setCatched] = useState(false);
+    const [catched, setCatched] = useState(true);
     const [start, setStart] = useState(false);
     const audioRef = useRef(null);
 

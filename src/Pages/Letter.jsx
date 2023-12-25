@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './Letter.css';
 import img from '../assets/apology.png';
-import html2pdf from 'html2pdf.js';
 import aniket from '../assets/aniket.png'
 
 const Letter = () => {
@@ -18,13 +17,6 @@ const Letter = () => {
             });
         }
 
-        const element = document.getElementById('main-letter-div');
-    
-        if (element) {
-          html2pdf(element);
-        } else {
-          console.error('Element not found');
-        }
     };
 
     const handleRevealClick = () => {
