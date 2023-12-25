@@ -6,8 +6,11 @@ body{
   background-size: cover;
   background-color: #111;
 }
+.main-letter-div{
+  width: 100vw;
+}
 .letter{
-    height: 100vh;
+    height: max-content;
     align-items: center;
      /* background: url('../assets/hogwarts.jpg'); */
      justify-content: center;

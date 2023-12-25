@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Letter.css';
 import img from '../assets/apology.png';
+import html2pdf from 'html2pdf.js';
 import aniket from '../assets/aniket.png'
 
 const Letter = () => {
@@ -16,20 +17,27 @@ const Letter = () => {
                 behavior: "smooth",
             });
         }
+
+        const element = document.getElementById('main-letter-div');
+    
+        if (element) {
+          html2pdf(element);
+        } else {
+          console.error('Element not found');
+        }
     };
 
     const handleRevealClick = () => {
         setText(true);
     }
 
+
     return (
         <>
             <div className="letter-main">
-
-
                 <div className="letter">
                     <div className='main-letter-div'>
-                    <div className='hogwarts-crest'>
+                        <div className='hogwarts-crest'>
                             <img src="https://pixy.org/src/152/1523365.png" alt="Hogwarts crest" height="100px" />
                         </div>
                         <div className='Merry-christmas'>
@@ -39,7 +47,7 @@ const Letter = () => {
                             </p>
                             <p className='dear'>Dear Vishwa,</p>
 
-                            <p className="msg">This is an special letter wishing you merry christmas from Hogwarts by your special friend "Gajar". Also 
+                            <p className="msg">This is an special letter wishing you merry christmas from Hogwarts by your special friend "Gajar". Also
                                 this letter is special because, Is letter me kafi jagah pr hindi bhi use kari gayi hai.
                             </p>
                             <p>
@@ -54,13 +62,31 @@ const Letter = () => {
                                             We've been friends from more than a year now, baat krte krte 1 saal kahatam ho gaya sacchi pata hi nahi chala.
                                             And I'm glad that we become friends. We Had some really great time together, yaad hai ek saal pehle ham robofest ki preparation kr rhe the.
                                             jab jaivik ne teri surname "Patel" rakh di thi 😂?
-                                            
+
                                             <br /> <br />
-                                            There are many happy and sad moments and I'm glad that you stayed no matter what. 
-                                            I know past kuch dino se our frienship is facing bad days and i'm sure we'll figure this out.
-                                            
+                                            me tujhe dil sorry kehna cahta hun, Sorry ki mene narajgi me kabhi tera point nahi dekha, bina matlab ke taunt mare,
+                                            sarcasm me baat kari, bina soche samje bol diya. I know ki mene bohat constructive way me baat rakh sakta tha, to ye pbm hi nahi ati
+                                            . Vishwa please mujhe maaf krde aur tujhe jitna daatna ho please daat de, lekin tu ese naraz mt reh please.
+                                            you know jab tu ese naraz/sad hoti hai na mujhe apne aap pata chal jaata hai. vishwa please pehle jese normal hoja, and sabse pehle
+                                            mujhe jor se meri galti pe daatna. I know me pagal hun, bina soche samje bol diya, sorry. But sacchi vishwa <b> I adore you a lot, care for you
+                                                a lot, respect you a lot. </b>
+                                            <br /><br />
+
+                                            Wo mass bunk se le kar green apple, we had hundreds of learnings and thousands of beautiful memories. tujhe yaad hai, jab me pehli baar
+                                            tujhse ruth gaya tha and then tereko ek card diya tha, mujhe tab hi samaj jana chaye the ki naraz hoke ese baat nahi bandh krni hoti, jo bhi baat ho
+                                            clear bata dena chaye. lekin vishwa, sorry ke saath saat I want to thank you for making collage life more beautiful. All the time we had talked, movies,
+                                            chess, garba, os-project, review paper, paneer chilli, waffle, etc etc. This is the literaly meaning of word 'Beautiful Memories' and
+                                            you are the literal meaning of word 'Beautiful'.
+
+                                            <br /> <br />
+                                            you made me much better person, learned soo many lessons from, Still abhi bhi me thoda pagal hi hun 🤦. And age koi pagalpan karu na to ab maar dena, ruth na mat plz
+                                            mere se nahi saha jata (I know galti krne se pehle ye sochna tha, sorry na vishwa age se esa nai hoga pakka).
+
+                                            <br /><br />
+                                            <b>Last Thing:</b>
+                                            Tujhe yaad hai jab Malang
                                         </p>
-                                        </> 
+                                    </>
                                         :
                                         <>
                                             Click Here to reveal text!
@@ -69,7 +95,7 @@ const Letter = () => {
                             </p>
                             <div className="letter-footer">
                                 <div className="left-sign">
-                                    <img  src="https://i.pinimg.com/originals/aa/cd/7a/aacd7ac2d37d003f422b2cc1834f68eb.png" alt="hogwarts letter stamp" height="100px" />
+                                    <img src="https://i.pinimg.com/originals/aa/cd/7a/aacd7ac2d37d003f422b2cc1834f68eb.png" alt="hogwarts letter stamp" height="100px" />
                                 </div>
                                 <div className="right-name">
                                     <img src={aniket} alt="calligraphy-fonts" border="0" width="100%" />
@@ -110,7 +136,7 @@ const Letter = () => {
                                     <p>It's an special spell which heals for making bond stronger in frienship.
                                         As Episkey heals minor injuries, in the same way this spell helps healing minor ups and downs 
                                         in friendship.
-                                        just say "Episkey Philla" and Move on 😂. 
+                                        just say "Episkey Philla" 😂. 
                                      </p>
                                      <p>I Hope tujhe ye pasand aya ho, Kesa Laga wo batana! </p>
                                     </section>

@@ -119,7 +119,7 @@ body{
 }
 .main-letter-div{
   margin: 0 auto; 
-  max-width: 600px; 
+  max-width: 800px; 
   background-image:url(https://i.pinimg.com/originals/cc/c8/a1/ccc8a1ca34050db39dfe04b813b96437.jpg); 
   padding: 10px; 
   border: solid 20px #D2AC47; 
@@ -132,8 +132,8 @@ body{
   text-align:center;
 }
 .Merry-christmas{
-  max-width:500px; 
-  margin: 0 auto; 
+  /* max-width:500px;  */
+  margin: 3rem auto; 
   padding: 1em; 
   margin-bottom: 20px;
 }
@@ -145,10 +145,6 @@ body{
 }
 .letter-text{
   font-size: 16px;
-}
-.table-main{
-  margin: 0 auto; 
-  width:100%;
 }
 
 
