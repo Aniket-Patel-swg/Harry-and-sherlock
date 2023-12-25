@@ -61,20 +61,20 @@ const Letter = () => {
                                         <p className="actual">
                                             We've been friends from more than a year now, baat krte krte 1 saal kahatam ho gaya sacchi pata hi nahi chala.
                                             And I'm glad that we become friends. We Had some really great time together, yaad hai ek saal pehle ham robofest ki preparation kr rhe the.
-                                            jab jaivik ne teri surname "Patel" rakh di thi 😂?
+                                            jab jaivik ne teri surname "Patel" rakh di thi 😂? There are soo many memories we laughed, learnt and become better person.
 
                                             <br /> <br />
-                                            me tujhe dil sorry kehna cahta hun, Sorry ki mene narajgi me kabhi tera point nahi dekha, bina matlab ke taunt mare,
+                                            Aur me tujhe dil sorry kehna cahta hun, Sorry ki mene narajgi me kabhi tera point nahi dekha, bina matlab ke taunt mare,
                                             sarcasm me baat kari, bina soche samje bol diya. I know ki mene bohat constructive way me baat rakh sakta tha, to ye pbm hi nahi ati
                                             . Vishwa please mujhe maaf krde aur tujhe jitna daatna ho please daat de, lekin tu ese naraz mt reh please.
-                                            you know jab tu ese naraz/sad hoti hai na mujhe apne aap pata chal jaata hai. vishwa please pehle jese normal hoja, and sabse pehle
+                                            you know jab tu ese naraz/sad hoti hai na mujhe apne aap pata chal jaata hai, aur wo mere se saha nahi jata. vishwa please pehle jese normal hoja, and sabse pehle
                                             mujhe jor se meri galti pe daatna. I know me pagal hun, bina soche samje bol diya, sorry. But sacchi vishwa <b> I adore you a lot, care for you
                                                 a lot, respect you a lot. </b>
                                             <br /><br />
 
-                                            Wo mass bunk se le kar green apple, we had hundreds of learnings and thousands of beautiful memories. tujhe yaad hai, jab me pehli baar
+                                            First mass bunk MPI ki lab, se le kar green apple, we had hundreds of learnings and thousands of beautiful memories. tujhe yaad hai, jab me pehli baar
                                             tujhse ruth gaya tha and then tereko ek card diya tha, mujhe tab hi samaj jana chaye the ki naraz hoke ese baat nahi bandh krni hoti, jo bhi baat ho
-                                            clear bata dena chaye. lekin vishwa, sorry ke saath saat I want to thank you for making collage life more beautiful. All the time we had talked, movies,
+                                            clear bata dena chaye. vishwa, sorry ke saath saat I want to thank you for making me better person and collage life more beautiful. All the time we had talked, movies,
                                             chess, garba, os-project, review paper, paneer chilli, waffle, etc etc. This is the literaly meaning of word 'Beautiful Memories' and
                                             you are the literal meaning of word 'Beautiful'.
 
@@ -84,7 +84,7 @@ const Letter = () => {
 
                                             <br /><br />
                                             <b>Last Thing:</b>
-                                            Tujhe yaad hai jab Malang
+                                            Tujhe yaad hai jab garba workshop ke last din tha, tujhe zara bhi mood nahi tha aane ka pura din ok ok gaya tha
                                         </p>
                                     </>
                                         :
