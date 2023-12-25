@@ -1,14 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import '../App.css';
 import MovingCircle from "../Components/MovingCircle";
+import audioFile from '../assets/harrytheme.mp3';
 
 const HomePage = () => {
     const [catched, setCatched] = useState(false);
+    const [start, setStart] = useState(false);
+    const audioRef = useRef(null);
 
     const handleSnitchCatched = () => {
         console.log('Good Work Harry!')
         setCatched(true);
     }
+
+    const handleStart = () => {
+        setStart(true)
+
+        const audio = audioRef.current || new Audio(audioFile);
+        audioRef.current = audio;
+    
+        // Set the loop property to true for continuous playback
+        audio.loop = true;
+
+        audio.volume = 0.5;
+    
+        // Start playing the audio
+        audio.play().catch((error) => {
+          // Autoplay was prevented, request user interaction
+          if (error.name === 'NotAllowedError') {
+            console.log('Autoplay prevented. Please interact with the page and try again.');
+          }
+        });
+    }
+    
     return (
         <>
             <div className='main-div'>
@@ -34,7 +58,11 @@ const HomePage = () => {
                             <h1 id='catch'>Catch The Snith</h1>
                         </section>
                         <section className="text-section">
-                            <b id='special'>For Special Letter</b>
+                            <button className="button-30" onClick={handleStart}>
+                                <b id='special'>
+                                    Click Here to Start!
+                                </b>
+                            </button>
                         </section>
                         <section className="button-section">
                             <p id='Snitch'>(Snitch will stop when you catch it)</p>
@@ -44,7 +72,9 @@ const HomePage = () => {
 
                 <br />
                 <section onClick={handleSnitchCatched}>
-                    <MovingCircle />
+
+                    {start ? <><MovingCircle /></> : <></>}
+
                 </section>
             </div>
         </>
