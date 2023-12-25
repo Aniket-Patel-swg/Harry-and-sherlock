@@ -1,42 +1,126 @@
-import React from "react";
+import React, { useState } from "react";
 import './Letter.css';
-import img from '../assets/aplogoy.png';
+import img from '../assets/apology.png';
+import aniket from '../assets/aniket.png'
 
 const Letter = () => {
 
-    
+    const [text, setText] = useState(false);
+
+    const scrollToSection = () => {
+        const targetSection = document.getElementById("spell-section");
+
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth",
+            });
+        }
+    };
+
+    const handleRevealClick = () => {
+        setText(true);
+    }
 
     return (
         <>
-            <div className="letter">
-                <div className='main-letter-div'>
+            <div className="letter-main">
+
+
+                <div className="letter">
+                    <div className='main-letter-div'>
                     <div className='hogwarts-crest'>
-                        <img src="https://pixy.org/src/152/1523365.png" alt="Hogwarts crest" height="100px" />
-                    </div>
-                    <div className='Merry-christmas'>
-                        <p>
-                            <img src={img} alt="Merry Christmas" width="80%" />
+                            <img src="https://pixy.org/src/152/1523365.png" alt="Hogwarts crest" height="100px" />
+                        </div>
+                        <div className='Merry-christmas'>
+                            <p>
+                                <img src={img} alt="Merry Christmas" width="80%" />
 
-                        </p>
-                        <p className='dear'>Dear Friend,</p>
-                        <p>
-                            After a thorough inspection where we couldn't find any suspicion of  cheating, we are happy to give you your test score. This test scores comes from Hogwarts School       of Witchcraft and Wizardry.
-                        </p>
-                        <hr />
+                            </p>
+                            <p className='dear'>Dear Vishwa,</p>
 
-                        <p className='letter-text'>
-                            Text goes here!
-                        </p>
-                        <div className="letter-footer">
-                            <div className="left-sign">
-                                <img src="https://i.pinimg.com/originals/aa/cd/7a/aacd7ac2d37d003f422b2cc1834f68eb.png" alt="hogwarts letter stamp" height="100px" />
-                            </div>
-                            <div className="right-name">
-                                <img src="https://fontmeme.com/permalink/210106/48367f9fb0ba4ceaabbc8d0020e8c094.png" alt="calligraphy-fonts" border="0" width="100%" />
+                            <p className="msg">This is an special letter wishing you merry christmas from Hogwarts by your special friend "Gajar". Also 
+                                this letter is special because, Is letter me kafi jagah pr hindi bhi use kari gayi hai.
+                            </p>
+                            <p>
+
+                            </p>
+                            <hr />
+
+                            <p className='letter-text'>
+                                <div className="click-me" onClick={handleRevealClick}>
+                                    {text ? <>
+                                        <p className="actual">
+                                            We've been friends from more than a year now, baat krte krte 1 saal kahatam ho gaya sacchi pata hi nahi chala.
+                                            And I'm glad that we become friends. We Had some really great time together, yaad hai ek saal pehle ham robofest ki preparation kr rhe the.
+                                            jab jaivik ne teri surname "Patel" rakh di thi 😂?
+                                            
+                                            <br /> <br />
+                                            There are many happy and sad moments and I'm glad that you stayed no matter what. 
+                                            I know past kuch dino se our frienship is facing bad days and i'm sure we'll figure this out.
+                                            
+                                        </p>
+                                        </> 
+                                        :
+                                        <>
+                                            Click Here to reveal text!
+                                        </>}
+                                </div>
+                            </p>
+                            <div className="letter-footer">
+                                <div className="left-sign">
+                                    <img  src="https://i.pinimg.com/originals/aa/cd/7a/aacd7ac2d37d003f422b2cc1834f68eb.png" alt="hogwarts letter stamp" height="100px" />
+                                </div>
+                                <div className="right-name">
+                                    <img src={aniket} alt="calligraphy-fonts" border="0" width="100%" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>  
+                    <div className="letter-button">
+                        <button className="button-54" onClick={scrollToSection}>
+                            Your Christmas Gift!
+                        </button>
+                    </div>
+                </div>
+                <div className="spell-section" id="spell-section">
+                    <h1>Speciall Crafted Spell for you</h1>
+
+
+                    <main>
+
+
+                        <div class="spell-card">
+                            <div class="spell-card__inner">
+                                <div class="spell-card__shape">
+                                    <div class="spell-card__trace"></div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.37 169.75">
+                                        <clipPath id="clip-expecto">
+                                            <path d="M218.62,114.53q0-2-.09-3.87c0-.46,0-.72,0-.72h0a53,53,0,0,0-1.22-9.76h0c-6.51-41.7-44.33-73.7-90-73.7-50.26,0-91,38.73-91,86.5,0,29.21,15.24,55,38.56,70.68q2,1.4,4.11,2.62l.35.2c.28.17,9.64,5.23,12.77,6.27.67.27,6.78,1.88,8.85,2.24,24.88,4.39,48.69-2.58,64-26.22A71.2,71.2,0,0,0,171.46,149c3.9-22.1-2.76-43.25-16-56.77,8.48,12.87,12.3,29.81,9.46,47.42-5.58,28.59-34.78,47.26-65.73,41.8a61,61,0,0,1-21.18-8A77.72,77.72,0,0,1,54.81,146.4c-.31-.77-2.94-7-3.69-9.43,0,.26-4.39-15.33-4.39-24,0-42.28,36.1-76.56,80.63-76.56,39.69,0,72.64,27.22,79.36,63.07a50.17,50.17,0,0,1,1.59,7.88c.68,3.45,1.54,8.42,2.14,14.09C211.39,148.75,195,183,195,183c3-2,10-7,10-7C218.13,165.33,218.8,127.69,218.62,114.53Z" />
+                                        </clipPath>
+                                        <path clip-path="url(#clip-expecto)" class="trace-motion" fill="none" stroke="#ddfffb" stroke-miterlimit="10" stroke-width="10" d="M155,92s49,94-49,97c0,0-62-6-65-78,0,0,7-63,54-73,0,0,29-18,76,4,0,0,58,26,41,111,0,0-9,31-17,30" transform="translate(-36.27 -26.47)" /></svg>
+
+                                </div>
+                                <div class="spell-card__name">
+                                    <h5>Episkey Philla</h5>
+                                    <section>
+                                         <p><b>Episkey:</b> Heals minor injuries</p>
+                                    <p><b>Phirlla:</b> It is an greek word for friend</p>
+                                    <p>It's an special spell which heals for making bond stronger in frienship.
+                                        As Episkey heals minor injuries, in the same way this spell helps healing minor ups and downs 
+                                        in friendship.
+                                        just say "Episkey Philla" and Move on 😂. 
+                                     </p>
+                                     <p>I Hope tujhe ye pasand aya ho, Kesa Laga wo batana! </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </main>
+                </div>
             </div>
         </>
     );

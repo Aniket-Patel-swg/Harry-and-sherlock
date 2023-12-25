@@ -150,10 +150,7 @@ body{
   margin: 0 auto; 
   width:100%;
 }
-.letter-footer{
-  display: flex;
-  margin-top: 3rem;
-}
+
 
 
 @keyframes incomingAni {
