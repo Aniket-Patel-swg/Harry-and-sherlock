@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import './Letter.css';
 import img from '../assets/apology.png';
-import aniket from '../assets/aniket.png'
+import aniket from '../assets/aniket.png';
+import audioFile from '../assets/Relaxing.mp3';
 
 const Letter = () => {
 
     const [text, setText] = useState(false);
+    const audioRef = useRef(null);
 
     const scrollToSection = () => {
         const targetSection = document.getElementById("spell-section");
@@ -21,6 +23,24 @@ const Letter = () => {
 
     const handleRevealClick = () => {
         setText(true);
+
+        const audio = audioRef.current || new Audio(audioFile);
+        audioRef.current = audio;
+    
+
+        console.log(audio)
+        // Set the loop property to true for continuous playback
+        audio.loop = true;
+
+        audio.volume = 0.5;
+    
+        // Start playing the audio
+        audio.play().catch((error) => {
+          // Autoplay was prevented, request user interaction
+          if (error.name === 'NotAllowedError') {
+            console.log('Autoplay prevented. Please interact with the page and try again.');
+          }
+        });
     }
 
 
@@ -51,7 +71,7 @@ const Letter = () => {
                                 <div className="click-me" onClick={handleRevealClick}>
                                     {text ? <>
                                         <p className="actual">
-                                            We've been friends from more than a year now, baat krte krte 1 saal kahatam ho gaya sacchi pata hi nahi chala.
+                                            We've been friends for more than a year now, baat krte krte 1 saal kahatam ho gaya sacchi pata hi nahi chala.
                                             And I'm glad that we become friends. We Had some really great time together, yaad hai ek saal pehle ham robofest ki preparation kr rhe the.
                                             jab jaivik ne teri surname "Patel" rakh di thi 😂? There are soo many memories we laughed, learnt and become better person.
 
@@ -130,7 +150,10 @@ const Letter = () => {
                                         in friendship.
                                         just say "Episkey Philla" 😂. 
                                      </p>
-                                     <p>I Hope tujhe ye pasand aya ho, Kesa Laga wo batana! </p>
+                                     <b>How to use:</b> <p>Just thik of most happiest moment of our amazing Friendship and say
+                                        "Episkey Philla".
+                                     </p>
+                                      <p>I Hope tujhe ye pasand aya ho, Kesa Laga wo batana! </p>
                                     </section>
                                 </div>
                             </div>

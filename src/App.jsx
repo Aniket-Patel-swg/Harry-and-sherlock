@@ -8,19 +8,17 @@ import {
 } from "react-router-dom";
 import Letter from './Pages/Letter';
 import HomePage from './Pages/HomePage';
-import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='https://merry-christmas-harry.vercel.app'>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/letter' element={<Letter />} />
         </Routes>
       </BrowserRouter>
-      <Analytics />
     </>
   )
 }
