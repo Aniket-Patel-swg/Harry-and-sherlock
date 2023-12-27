@@ -184,7 +184,9 @@ const Letter = () => {
                                      <b>How to use:</b> <p>Just thik of memory of our friendship that make you smile or laugh and say
                                         "Episkey Philla".
                                      </p>
-                                      <p>I Hope tujhe ye pasand aya ho, Kesa Laga wo batana! </p>
+                                      <p>
+                                        I Hope tujhe ye pasand aya ho, Kesa Laga wo batana! 
+                                      </p>
                                     </section>
                                 </div>
                             </div>
