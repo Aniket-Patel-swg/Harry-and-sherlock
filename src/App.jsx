@@ -21,6 +21,13 @@ function App() {
           <Route path='/Reply' element={<Reply />} />
         </Routes>
       </BrowserRouter>
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/letter' element={<Letter />} />
+          <Route path='/Reply' element={<Reply />} />
+        </Routes>
+      </BrowserRouter> */}
     </>
   )
 }
