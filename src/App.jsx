@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Letter from './Pages/Letter';
 import HomePage from './Pages/HomePage';
+import Reply from './Pages/Reply';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/letter' element={<Letter />} />
+          <Route path='/Reply' element={<Reply />} />
         </Routes>
       </BrowserRouter>
     </>

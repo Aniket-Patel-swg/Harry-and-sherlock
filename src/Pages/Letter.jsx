@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import './Letter.css';
-import img from '../assets/apology.png';
+import img from '../assets/christmas.png';
 import aniket from '../assets/aniket.png';
 import audioFile from '../assets/Relaxing.mp3';
 
@@ -60,7 +60,7 @@ const Letter = () => {
                             <p className='dear'>Dear Vishwa,</p>
 
                             <p className="msg">This is an special letter wishing you merry christmas from Hogwarts by your special friend "Gajar". Also
-                                this letter is special because, Is letter me kafi jagah pr hindi bhi use kari gayi hai.
+                                this letter is special because, Is letter me kafi jagah pr hindi bhi use kari gayi hai and intentionally grammar and seplling mistakes hai 😂.
                             </p>
                             <p>
 
@@ -71,32 +71,58 @@ const Letter = () => {
                                 <div className="click-me" onClick={handleRevealClick}>
                                     {text ? <>
                                         <p className="actual">
+                                            Dear Nautanki,
                                             We've been friends for more than a year now, baat krte krte 1 saal kahatam ho gaya sacchi pata hi nahi chala.
                                             And I'm glad that we become friends. We Had some really great time together, yaad hai ek saal pehle ham robofest ki preparation kr rhe the.
                                             jab jaivik ne teri surname "Patel" rakh di thi 😂? There are soo many memories we laughed, learnt and become better person.
 
                                             <br /> <br />
                                             Aur me tujhe dil sorry kehna cahta hun, Sorry ki mene narajgi me kabhi tera point nahi dekha, bina matlab ke taunt mare,
-                                            sarcasm me baat kari, bina soche samje bol diya. I know ki mene bohat constructive way me baat rakh sakta tha, to ye pbm hi nahi ati
-                                            . Vishwa please mujhe maaf krde aur tujhe jitna daatna ho please daat de, lekin tu ese naraz mt reh please.
-                                            you know jab tu ese naraz/sad hoti hai na mujhe apne aap pata chal jaata hai, aur wo mere se saha nahi jata. vishwa please pehle jese normal hoja, and sabse pehle
+                                            sarcasm me baat kari, bina soche samje bol diya. I know mera baat krne ka tarika galat tha and mujhe is way 
+                                            me apni narajgi express nahi krni thi. Vishwa please mujhe maaf krde aur tujhe jitna daatna ho please daat de, lekin tu ese naraz mt reh.
+                                            you know jab tu ese naraz/sad hoti hai na mujhe apne aap pata chal jaata hai, aur wo mereko bilkul accha nahi lagta. vishwa chal ab pehle jese normal hoja, and sabse pehle
                                             mujhe jor se meri galti pe daatna. I know me pagal hun, bina soche samje bol diya, sorry. But sacchi vishwa <b> I adore you a lot, care for you
-                                                a lot, respect you a lot. </b>
+                                            a lot and respect you a lot. </b>
                                             <br /><br />
 
-                                            First mass bunk MPI ki lab, se le kar green apple, we had hundreds of learnings and thousands of beautiful memories. tujhe yaad hai, jab me pehli baar
+                                            I Know you thinking that, I'm already okay and chill. Also you don't have to do all this. See I just realized my mistake and I felt to share it with you.
+                                            Vishwa ye mera first time hai "ye rishta kya kehlata hai" wala relation, to narazgi me mene galat way me express kar diya. Me hamesah cahta hun ki tu ekdam free 
+                                            bird rahe, jo marzi ho wo kare. I know ki mujhe thoda hurt hua tha iska matlab ye nahi hai ki me tujhe sidha blame karu ki esa hi hona chaye, esa tujhe nahi krna tha, etc.
+                                            Mera way of expressing is wrong and I'm sorry for that. 
+                                            <br /><br />
+                                            Also Vishwa when I say I trust you, I literally mean it. Last time bas bohat confusion aur ghusse me sab mix ho rha tha and galat way me bahar aa gaya aur mere actions 
+                                            words se alag the. Meri wajah se tujhe hurt hua and I'm sorry for that. Vishwa this is the first time for me ki kisika itna accha friend bana hu and then thoda hurt hua ho, 
+                                            to Wo hi sab confusion me galat tarike se bahar aa gaya, wrna me koi taunt and sarcasm mean nahi krta hun. And I'm glad ki hamare beech understanding kafi acchi hai,
+                                            we've already kind of figured it out, and with this problem I hope our understanding and bonding will be more strong :)
+
+                                            <br /><br />
+                                            Also, I accept ki meri galti hai. jab mene nupur se share kiya tha, I should have told you ki mene sab bata diya hai and samajna chaye ki agar tujhe baad me pata chala to aur
+                                            bura lag sakta hai. I'm sorry vishwa, esi situation me mene unintentionally hi sahi par tujse juth kaha, mene ese baat baat me ye keh diya tha ki "Mene sirf ye pucha tha ki, if she (you) is 
+                                            okay or not". I know esi situation me mujhe esa nahi krna chaye tha, I'm sorry. Kyuki uske baad baat bohat badh sakti thi, but I'm glad ki tum sab (you, Nupur and Gungun) bohat acche ho ki sab 
+                                            sambhal liya. 
+
+                                            And yes us moment pe mujhe laga ki Nupur ko help ke liye puch sakta hun (to know if you're okay) isliye use message kiya tha, and sorry again tujhe bata dena chaye tha vishwa. 
+                                            Thik wo sab to hota rehta hai ... 
+
+                                            <br /><br />
+                                           <b>Chal ek mast vaat kau </b> First mass bunk se le kar ab tak, we had hundreds of learnings and thousands of beautiful memories and grown together. tujhe yaad hai, jab me pehli baar
                                             tujhse ruth gaya tha and then tereko ek card diya tha, mujhe tab hi samaj jana chaye the ki naraz hoke ese baat nahi bandh krni hoti, jo bhi baat ho
-                                            clear bata dena chaye. vishwa, sorry ke saath saat I want to thank you for making me better person and collage life more beautiful. All the time we had talked, movies,
-                                            chess, garba, os-project, review paper, paneer chilli, waffle, etc etc. This is the literaly meaning of word 'Beautiful Memories' and
+                                            clear bata dena chaye. yaad hai mene kya likha tha us card me? vishwa, I want to thank you for making me better person and collage life more beautiful. All the time we had talked, movies,
+                                            chess, garba, os-project, review paper, paneer chilli, waffle, long phone calls, endless chats, pata nahi kya kya . This is the literaly meaning of word 'Beautiful Memories' and
                                             you are the literal meaning of word 'Beautiful'.
 
                                             <br /> <br />
-                                            you made me much better person, learned soo many lessons from, Still abhi bhi me thoda pagal hi hun 🤦. And age koi pagalpan karu na to ab maar dena, ruth na mat plz
-                                            mere se nahi saha jata (I know galti krne se pehle ye sochna tha, sorry na vishwa age se esa nai hoga pakka).
+                                            You made me much better person, learned soo many lessons, Still abhi bhi me thoda pagal hi hun 🤦. And age koi pagalpan karu then ab to hi maar dena. 
+                                            But sacche ... yarrr ... <b>It has been more than one year</b>. ... kya bol mei ....
 
+                                            <br />
+                                            Abhi bhi ham pagal hi hai 😂, aur pagal hi rahenge. Wese to meri har memories favourite hi hai lekin ye wali memory I found unique. yaad hai jab Tanmay sir hamara DP ka viva le rhe the,
+                                            Sirf hamara viva baki tha. Pehle tera viva hua tb mene tereko shayad "Composite" pattern di thi and then mene tereko ishare me kaha ki "Facade" design pattern dena. And at that moment I realize ki
+                                            mera to Facade ka assignment hi baki tha, fir sir ke saamne beht ke assignment kr rhe the ham. you know sir ne kaha tha "Kya farak padega, tum logo wese bhi bata doge" and acche marks rakh diye the. 
+                                            
                                             <br /><br />
-                                            <b>Last Thing:</b>
-                                            Tujhe yaad hai jab garba workshop ke last din tha, tujhe zara bhi mood nahi tha aane ka pura din ok ok gaya tha
+                                            I just wish ki age bhi ese hi acchi memories banti rahe, and when we look back <b>we can laugh and smile</b>  like this one. Btw tera koi favorite unique memories ho to batana, 
+                                            chal bye abhi bohat lamba letter ho gaya lagta hai, aur ye christmas gift dekhna mat bhulna. 
                                         </p>
                                     </>
                                         :
@@ -115,6 +141,11 @@ const Letter = () => {
                             </div>
                         </div>
                     </div>
+                    {/* <div className="letter-button">
+                        <button className="button-54" >
+                            Want to give reply? Click Here!
+                        </button>
+                    </div> */}
                     <div className="letter-button">
                         <button className="button-54" onClick={scrollToSection}>
                             Your Christmas Gift!
@@ -150,7 +181,7 @@ const Letter = () => {
                                         in friendship.
                                         just say "Episkey Philla" 😂. 
                                      </p>
-                                     <b>How to use:</b> <p>Just thik of most happiest moment of our amazing Friendship and say
+                                     <b>How to use:</b> <p>Just thik of memory of our friendship that make you smile or laugh and say
                                         "Episkey Philla".
                                      </p>
                                       <p>I Hope tujhe ye pasand aya ho, Kesa Laga wo batana! </p>

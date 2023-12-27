@@ -1,0 +1,22 @@
+.upper-c{
+    background-color: transparent;
+    width: 100%;
+    resize: none; /* Disable manual resizing by the user */
+  overflow-y: hidden;
+  height: auto; 
+    /* min-height: 25px; */
+    margin: 1rem 0px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.lower-c{
+  background-color: transparent;
+  width: 100%;
+  resize: none; /* Disable manual resizing by the user */
+overflow-y: hidden;
+height: auto; 
+  min-height: 60vh;
+  margin: 1rem 0px;
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+}
