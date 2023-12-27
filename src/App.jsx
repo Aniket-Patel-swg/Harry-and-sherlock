@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename='https://merry-christmas-harry.vercel.app'>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/letter' element={<Letter />} />
