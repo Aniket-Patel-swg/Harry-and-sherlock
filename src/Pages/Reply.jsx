@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import vishwa from '../assets/Vishwa.png'
+import vishwa from '../assets/vishwa.png'
 import reply from '../assets/reply.png'
 import './Reply.css';
 
